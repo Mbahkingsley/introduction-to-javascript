@@ -1,9 +1,32 @@
-var my_name = "Mbah kingsley chinonso";
-var height =  70
-var country = "Nigeria"
+// simple calculator with Javascript
 
-document.write("my name is " + my_name);
-document.write("<br>")
-document.write("my height is " + height +"cm");
-document.write("<br>")
-document.write("I am from " + country);
+// first get the type of operation the user wish to perform
+
+let result;
+
+const operation = prompt("kindly enter the operation you wish to perform. +,-,/ or *: ");
+
+// get the operands from user
+const first =parseFloat(prompt("Enter your first number: "));
+
+const second =parseFloat(prompt("Enter your first number: "));
+
+if ( operation == "+") {
+    result = first + second;
+    alert("result: " + result);
+}
+else if (operation == "-") {
+    result = first - second;
+    alert("result: " + result);
+}
+else if (operation == "/") {
+    result = first / second;
+    alert("result: " + result);
+}
+else if (operation == "*") {
+    result = first * second;
+    alert("result: " + result)
+}
+else {
+    alert("invalid operation kindly run the program and try again.")
+}
